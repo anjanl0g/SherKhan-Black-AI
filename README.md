@@ -14,6 +14,18 @@ It operates on a **Dual-Core Hybrid Engine**:
 
 ---
 
+## 📸 Interface Visuals
+
+### 🔴 Hacker Mode (Red Team Ops)
+*Uncensored AI Engine using Dolphin-Mistral for offensive operations.*
+![Hacker Mode](assets/1.png)
+
+### 🔵 Coder Mode (Blue Team / Dev)
+*Safe Mode using Qwen-Coder for secure scripting and log analysis.*
+![Coder Mode](assets/2.png)
+
+---
+
 ## ⚙️ Prerequisites (System Setup)
 Before running the tool, ensure you have the following installed on your Kali Linux/Ubuntu system:
 *   **Python 3.8+**
