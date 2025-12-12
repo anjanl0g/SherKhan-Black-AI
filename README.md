@@ -22,7 +22,7 @@ Before running the tool, ensure you have the following installed on your Kali Li
 *   **Kali Tools:** `nmap`, `nikto`, `hydra`, `sherlock`, `macchanger`
 
 ### 🧠 Step 0: Install AI Brains
-Open a terminal and run these commands to download the required AI models:
+Open a terminal and run these commands **once** to download the required AI models:
 
 ```bash
 # Uncensored Model for Black Hat Ops
@@ -31,6 +31,15 @@ ollama pull dolphin-mistral
 # Coding Model for Scripting & Analysis
 ollama pull qwen2.5-coder
 ```
+
+### ⚡ Step 0.5: Start AI Service (Important)
+Before running the tool, make sure the Ollama service is running in the background.
+Run this command in a separate terminal:
+
+```bash
+ollama serve
+```
+*(If it says "Address already in use", it means it is already running. You can close this terminal).*
 
 ---
 
