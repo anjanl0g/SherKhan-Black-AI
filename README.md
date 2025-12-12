@@ -119,4 +119,3 @@ The AI is smart enough to distinguish your intent:
 **Contact:** ms8007163@gmail.com
 
 > *This tool is developed for educational purposes and authorized penetration testing only. The author is not responsible for any misuse. Always obtain written permission before scanning any target.*
-```
