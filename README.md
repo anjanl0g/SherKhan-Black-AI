@@ -6,7 +6,7 @@
 *Powered by Dolphin-Mistral (Uncensored) & Qwen-Coder (Dev).*
 
 ## 📖 Introduction
-**Sher Khan Black A.I** is an advanced, agentic cybersecurity framework designed for Red, Blue, and Black team operations. Unlike standard chatbots, this tool possesses **Real-Time Execution Capabilities**. It routes commands through a smart backend to either execute native Kali Linux tools (Nmap, Hydra, Nikto) or generate advanced payloads using local AI models.
+**Sher Khan Black A.I** is an advanced, agentic cybersecurity framework designed for Red, Blue, and Black team operations. Unlike standard chatbots, this tool possesses **Real-Time Execution Capabilities**. It routes commands through a smart backend to either execute native Kali Linux/Windows tools (Nmap, Hydra, Nikto) or generate advanced payloads using local AI models.
 
 It operates on a **Dual-Core Hybrid Engine**:
 *   😈 **Hacker Mode (Red Skull):** Uses `dolphin-mistral` for uncensored operations, exploit generation, and social engineering.
@@ -14,27 +14,25 @@ It operates on a **Dual-Core Hybrid Engine**:
 
 ---
 
-## 📸 Interface Visuals
+## ⚙️ Prerequisites (System Setup)
+Before running the tool, ensure you have the following installed:
 
-### 🔴 Hacker Mode (Red Team Ops)
-*Uncensored AI Engine using Dolphin-Mistral for offensive operations.*
-![Hacker Mode](assets/1.png)
+### For Kali Linux / Ubuntu:
+*   **Python 3.8+**
+*   **Node.js & npm**
+*   **Ollama**
+*   **Tools:** `nmap`, `nikto`, `hydra`, `sherlock`, `macchanger`
 
-### 🔵 Coder Mode (Blue Team / Dev)
-*Safe Mode using Qwen-Coder for secure scripting and log analysis.*
-![Coder Mode](assets/2.png)
+### For Windows:
+*   **Python 3.8+** (Add to PATH)
+*   **Node.js & npm**
+*   **Ollama for Windows**
+*   **Tools:** Install [Nmap for Windows](https://nmap.org/download.html).
 
 ---
 
-## ⚙️ Prerequisites (System Setup)
-Before running the tool, ensure you have the following installed on your Kali Linux/Ubuntu system:
-*   **Python 3.8+**
-*   **Node.js & npm** (v18 or higher)
-*   **Ollama** (for running local AI models)
-*   **Kali Tools:** `nmap`, `nikto`, `hydra`, `sherlock`, `macchanger`
-
-### 🧠 Step 0: Install AI Brains
-Open a terminal and run these commands to download the required AI models:
+## 🧠 Step 0: Install AI Brains
+Open a terminal (Powershell or Bash) and run these commands **once**:
 
 ```bash
 # Uncensored Model for Black Hat Ops
@@ -44,52 +42,46 @@ ollama pull dolphin-mistral
 ollama pull qwen2.5-coder
 ```
 
+> **Note:** Ensure Ollama is running (`ollama serve`).
+
 ---
 
 ## 🚀 Deployment Guide (How to Run)
 
-To run the full suite, you need to open **2 Separate Terminals**. Follow the exact order below:
+To run the full suite, you need to open **2 Separate Terminals**.
 
 ### 🐍 Terminal 1: The Backend Engine
-This terminal runs the Python API that connects to Kali Linux tools and the AI models.
 
-1.  Navigate to the backend folder:
-    ```bash
-    cd pentest_backend
-    ```
-2.  Create and activate virtual environment (First time only):
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-3.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Start the Server:**
-    ```bash
-    python3 -m uvicorn main:app --reload
-    ```
-    > ✅ *Success Message: "Application startup complete. Running on http://127.0.0.1:8000"*
+**On Linux:**
+```bash
+cd pentest_backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 -m uvicorn main:app --reload
+```
+
+**On Windows (PowerShell):**
+```powershell
+cd pentest_backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
+```
+> ✅ *Success Message: "Application startup complete. Running on http://127.0.0.1:8000"*
 
 ---
 
 ### ⚛️ Terminal 2: The Frontend Dashboard
-This terminal runs the professional React/Next.js User Interface.
 
-1.  Navigate to the UI folder:
-    ```bash
-    cd pentest-ui
-    ```
-2.  Install Node modules (First time only):
-    ```bash
-    npm install
-    ```
-3.  **Start the Dashboard:**
-    ```bash
-    npm run dev
-    ```
-    > ✅ *Success Message: "Ready in ... ms. Url: http://localhost:3000"*
+**On Linux/Windows:**
+```bash
+cd pentest-ui
+npm install
+npm run dev
+```
+> ✅ *Success Message: "Ready in ... ms. Url: http://localhost:3000"*
 
 ---
 
