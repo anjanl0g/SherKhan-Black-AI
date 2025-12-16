@@ -124,8 +124,14 @@ Once both terminals are running, open your web browser (Firefox/Chrome) and go t
 
 ### 1. The Mode Switch (Architecture Control)
 Use the toggle button at the top header to switch brains:
+
 *   **HACKER MODE (Red/Black Team):** Uses `dolphin-mistral` for attacks, creating malware logic, and uncensored queries.
+    
+    ![Hacker Mode](assets/1.png)
+
 *   **CODER MODE (White Team):** Uses `qwen2.5-coder` for writing safe scripts, fixing code, and analyzing logs.
+
+    ![Coder Mode](assets/2.png)
 
 ### 2. Execution vs. Generation
 The AI is smart enough to distinguish your intent:
