@@ -1,4 +1,4 @@
-# 🐅 Sher Khan Black A.I
+# Sher Khan Black A.I
 ### Autonomous Defensive Security Agent | Powered by Local LLMs
 
 ![Status](https://img.shields.io/badge/Status-Operational-brightgreen?style=for-the-badge)
