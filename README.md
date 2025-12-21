@@ -1,156 +1,143 @@
-# Sher Khan Black A.I
-### Autonomous Defensive Security Agent | Powered by Local LLMs
+# 💀 SherKhan Black AI (v5.0 - JARVIS Edition)
 
-![Status](https://img.shields.io/badge/Status-Operational-brightgreen?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-2.0-red?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+**The World's First Autonomous Offensive & Defensive AI Ecosystem.**
+*Powered by Swarm Intelligence | Vision | Voice | Active Deception*
 
-> **"Bridging the gap between Generative AI and SecOps."**
+![Status](https://img.shields.io/badge/Status-Operational-brightgreen) ![Version](https://img.shields.io/badge/Version-5.0_JARVIS-red) ![Privacy](https://img.shields.io/badge/Privacy-100%25_Offline-blue) ![Role](https://img.shields.io/badge/Role-Red_&_Blue_Team-black)
 
-## 📖 Introduction
+## ⚡ System Overview
+**SherKhan Black AI** is not a chatbot; it is a fully autonomous **Cyber Defense & Offense Agent**. Unlike standard LLMs (ChatGPT/Gemini) that only generate text, SherKhan **sees, hears, executes, and defends** in real-time.
 
-**Sher Khan Black A.I** is an advanced, agentic cybersecurity framework designed for the full lifecycle of security operations. Unlike standard chatbots, this tool possesses **Real-Time Execution Capabilities**. It routes commands through a smart backend to either execute native Kali Linux/Windows tools (Nmap, Hydra, Nikto) or generate advanced payloads using local AI models.
-
-It features a **Quad-Module Architecture**, allowing it to switch roles instantly:
-
-1.  🔥 **Red/Black Module:** Uncensored simulation & attack emulation.
-2.  🛡️ **Blue Module:** Forensics & log analysis.
-3.  ⚖️ **White Module:** Compliance, reporting & secure coding.
+It utilizes a **Swarm Intelligence Architecture**, coordinating multiple AI agents to scan targets, analyze threats, and generate reports, while simultaneously running a **Ghost Protocol (Honeypot)** to trap attackers.
 
 ---
 
-## 🏗️ Architecture (How it Works)
+## 📸 Interface Preview
 
-The system uses a routing engine to decide whether to *execute* a tool or *generate* reasoning using specific LLMs.
+### 😈 Hacker Mode (Offensive Ops)
+*Powered by Dolphin-Mistral (Uncensored)*
+![Hacker Mode](assets/1.png)
 
-```mermaid
-graph TD
-    User[User / SecOps Engineer] -->|Commands| API[FastAPI Gateway]
-    API -->|Route Intent| Brain{Core Controller}
-    
-    Brain -->|Attack & Sim| Red[🔥 RED/BLACK MODULE]
-    Red -->|Uncensored LLM| Mistral[Dolphin-Mistral]
-    Mistral -->|Action| Payload[Payload Emulation & Recon]
-    
-    Brain -->|Defense & Logs| Blue[🛡️ BLUE MODULE]
-    Blue -->|Forensics| Scapy[Scapy & Log Analysis]
-    
-    Brain -->|Code & Audit| White[⚖️ WHITE MODULE]
-    White -->|Secure Coding| Qwen[Qwen-Coder Model]
-    Qwen -->|Action| Patch[Patches & Reports]
-```
+### 💻 Coder Mode (DevSecOps)
+*Powered by Qwen-Coder (Secure Development)*
+![Coder Mode](assets/2.png)
 
 ---
 
-## ⚙️ Prerequisites (System Setup)
+## 🚀 Key Features (v5.0)
 
-Before running the tool, ensure you have the following installed:
+### 1. 🐝 Swarm Intelligence (Multi-Agent System)
+Instead of a single bot, SherKhan deploys a squad:
+*   **Agent 1 (Hunter):** Scans the target and finds raw vulnerabilities.
+*   **Agent 2 (Researcher):** Maps findings to CVEs and suggests technical fixes.
+*   **Agent 3 (Writer):** Compiles a professional PDF Mission Report.
 
-### For Kali Linux / Ubuntu:
-*   **Python 3.8+**
-*   **Node.js & npm**
-*   **Ollama**
-*   **Tools:** `nmap`, `nikto`, `hydra`, `sherlock`, `macchanger`
+### 2. 🛡️ Ghost Protocol (Active Defense)
+*   SherKhan doesn't just attack; it defends.
+*   Runs a **Fake SSH Trap** on Port 2222.
+*   **Capture:** Logs attacker IPs, usernames, and passwords directly to the internal database (`sherkhan.db`).
+*   **Alert:** Notifies you instantly via the Dashboard.
 
-### For Windows:
-*   **Python 3.8+** (Add to PATH)
-*   **Node.js & npm**
-*   **Ollama for Windows**
-*   **Tools:** Install [Nmap for Windows](https://nmap.org/download.html).
+### 3. 👁️ Vision Capabilities (The Eyes)
+*   **Analyze Screenshots:** Upload images of login pages, logs, or code.
+*   SherKhan uses **LLaVA** to detect phishing clones, UI errors, or hidden threats visually.
+
+### 4. 📂 Deep File Analysis (PCAP & Logs)
+*   **Packet Inspector:** Upload `.pcap` (Wireshark) files.
+*   SherKhan analyzes network traffic, extracts unique IPs, and detects anomalies using Scapy + AI.
+
+### 5. 🗣️ Voice Command Center (The Mouth)
+*   **Talk to SherKhan:** Full Two-Way Audio communication.
+*   Give commands like *"Scan localhost"* or *"Analyze this file"* via microphone.
+
+### 6. ⚡ Real-Time Tool Execution
+Directly controls Kali Linux arsenal:
+*   `Nmap` (Network Discovery)
+*   `Nikto` (Web Vulnerability)
+*   `Gobuster` (Directory Brute-force)
+*   `Hydra` (Password Cracking)
+*   `Sherlock` (OSINT Identity Tracking)
 
 ---
 
-## 🧠 Step 0: Install AI Brains
+## 🛠️ Installation & Setup
 
-Open a terminal (Powershell or Bash) and run these commands **once**:
+### Option 1: Kali Linux / Ubuntu (Recommended)
 
+**1. Initialize AI Models**
 ```bash
-# Uncensored Model for Black Hat / Red Team Ops
-ollama pull dolphin-mistral
-
-# Coding Model for White Team / Scripting & Analysis
-ollama pull qwen2.5-coder
+ollama pull dolphin-mistral  # The Hacker
+ollama pull qwen2.5-coder    # The Coder
+ollama pull mistral          # The Writer
+ollama pull llava            # The Eyes
 ```
 
-> **Note:** Ensure Ollama is running (`ollama serve`).
-
----
-
-## 🚀 Deployment Guide (How to Run)
-
-To run the full suite, you need to open **2 Separate Terminals**.
-
-### 🐍 Terminal 1: The Backend Engine
-
-**On Linux:**
+**2. Backend Setup**
 ```bash
 cd pentest_backend
-python3 -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
-python3 -m uvicorn main:app --reload
+python main.py
 ```
 
-**On Windows (PowerShell):**
-```powershell
-cd pentest_backend
-python -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
-python -m uvicorn main:app --reload
-```
-> ✅ *Success Message: "Application startup complete. Running on http://127.0.0.1:8000"*
-
----
-
-### ⚛️ Terminal 2: The Frontend Dashboard
-
-**On Linux/Windows:**
+**3. Frontend Setup**
 ```bash
-cd pentest-ui
+cd pentest_ui
 npm install
 npm run dev
 ```
-> ✅ *Success Message: "Ready in ... ms. Url: http://localhost:3000"*
 
 ---
 
-## 🖥️ Usage Instructions
+### Option 2: 🪟 Windows Installation
 
-Once both terminals are running, open your web browser (Firefox/Chrome) and go to:
-👉 **http://localhost:3000**
+**Prerequisites:**
+*   [Python 3.10+](https://www.python.org/downloads/)
+*   [Node.js (LTS)](https://nodejs.org/)
+*   [Ollama for Windows](https://ollama.com/download/windows)
+*   [Npcap](https://npcap.com/) (Required for Scapy/Wireshark features)
 
-### 1. The Mode Switch (Architecture Control)
-Use the toggle button at the top header to switch brains:
+**1. Setup AI Models (PowerShell)**
+Open PowerShell and run:
+```powershell
+ollama pull dolphin-mistral
+ollama pull qwen2.5-coder
+ollama pull llava
+```
 
-*   **HACKER MODE (Red/Black Team):** Uses `dolphin-mistral` for attacks, creating malware logic, and uncensored queries.
-    
-    ![Hacker Mode](assets/1.png)
+**2. Backend Setup**
+```powershell
+cd pentest_backend
+pip install -r requirements.txt
+python main.py
+```
+*Note: If you get a "command not found" error for tools like Nmap, ensure you have installed the Windows versions of Nmap, Nikto, etc., and added them to your System PATH.*
 
-*   **CODER MODE (White Team):** Uses `qwen2.5-coder` for writing safe scripts, fixing code, and analyzing logs.
-
-    ![Coder Mode](assets/2.png)
-
-### 2. Execution vs. Generation
-The AI is smart enough to distinguish your intent:
-*   **To Run a Tool:** Use keywords like `Run`, `Start`, or click the Sidebar Buttons.
-    *   *Example:* `"Run nmap on scanme.nmap.org"` (Actually executes Nmap).
-*   **To Generate Code:** Just ask a question.
-    *   *Example:* `"Write a Python ransomware script for educational review"` (Generates code using AI).
-
-### 3. File Analysis (Blue Team)
-*   Click the **File Icon** next to the chat bar.
-*   Upload **`.pcap`** files for Wireshark Network Analysis.
-*   Upload **Log/Text** files for vulnerability scanning.
+**3. Frontend Setup**
+Open a new PowerShell window:
+```powershell
+cd pentest_ui
+npm install
+npm run dev
+```
+*Access Dashboard at: `http://localhost:3000`*
 
 ---
 
-## 🛡️ Disclaimer
+## 👨‍💻 About the Author
 
-**Author:** Sher Khan
-**Contact:** ms8007163@gmail.com
-**LinkedIn:** [Sher Khan](https://www.linkedin.com/in/sherkhan-sk/)
+**Sher Khan**
+*Lead Cyber Security Architect & AI Developer*
 
-> *This tool is developed strictly for **educational purposes and defensive security research**. The author is not responsible for any misuse. Always obtain written permission before scanning any target.*
+The creator of **SherKhan Black AI**, dedicated to advancing the field of **Autonomous Cyber Warfare** and **DevSecOps**. This project represents the fusion of Offensive Security and Generative AI.
+
+*   **GitHub:** [Check Profile](https://github.com/anjanl0g)
+*   **LinkedIn:** [Sher Khan](https://www.linkedin.com/in/sher-khan-b43060195/)
+*   **Mission:** Building the JARVIS for Cyber Security.
+
+---
+
+## ⚠️ Legal Disclaimer
+**SherKhan Black AI is a Security Assessment Tool.**
+It is designed for **Authorized Red Teaming** and **Educational Purposes** only.
+*   Do not use this tool on networks you do not own or have permission to test.
+*   The developers are not responsible for misuse.
