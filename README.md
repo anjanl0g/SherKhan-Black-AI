@@ -130,8 +130,8 @@ npm run dev
 
 The creator of **SherKhan Black AI**, dedicated to advancing the field of **Autonomous Cyber Warfare** and **DevSecOps**. This project represents the fusion of Offensive Security and Generative AI.
 
-*   **GitHub:** [Check Profile](https://github.com/anjanl0g)
-*   **LinkedIn:** [Sher Khan](https://www.linkedin.com/in/sher-khan-b43060195/)
+*   **GitHub:** [anjanl0g](https://github.com/anjanl0g)
+*   **LinkedIn:** [Sher Khan](https://www.linkedin.com/in/sherkhan-sk/)
 *   **Mission:** Building the JARVIS for Cyber Security.
 
 ---
