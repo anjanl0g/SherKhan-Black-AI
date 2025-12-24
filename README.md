@@ -60,6 +60,34 @@ Directly controls Kali Linux arsenal:
 
 ---
 
+## 🎮 Tactical Usage & Prompt Engineering
+
+SherKhan is designed to adapt to various Cyber Security roles. Here is how to utilize its AI capabilities professionally:
+
+### 🔴 Red Team / Black Hat Ops (Offensive Simulation)
+*Use **Hacker Mode** or **Swarm Mode**. Focus on exploitation and penetration testing.*
+
+*   **Network Recon:** "Perform a stealth SYN scan on `192.168.1.15` and identify all running services with version numbers."
+*   **Exploit Development:** "Write a Python script to fuzz the login parameter of a target web app to test for Buffer Overflow."
+*   **Social Engineering:** "Generate a phishing email template for a corporate security drill focusing on 'Urgent Password Reset'."
+*   **Web Attacks:** "Analyze this URL `http://target.com/id=1` for SQL Injection possibilities and suggest a payload for testing."
+
+### 🔵 Blue Team (Defensive & Forensics)
+*Use **Vision Mode** and **File Upload**. Focus on threat detection and analysis.*
+
+*   **Log Analysis:** *[Upload Auth.log]* "Analyze these server logs. Identify any IP addresses performing brute-force attacks and suggest a fail2ban regex."
+*   **Traffic Inspection:** *[Upload .pcap]* "Analyze this Wireshark capture. Look for suspicious UDP traffic or beacons contacting unknown C2 servers."
+*   **Malware Analysis:** "Explain the behavior of this obfuscated Python code and rewrite it in a readable format."
+
+### ⚪ White Hat / Auditor (Reporting & Fixing)
+*Use **Swarm Mode** and **Coder Mode**. Focus on remediation and compliance.*
+
+*   **Patching:** "I found an XSS vulnerability in my React application. Write the secure code to sanitize user input and prevent this."
+*   **Reporting:** "Generate a professional executive summary for the Nmap scan results, explaining the risks of open Port 23 (Telnet) to non-technical management."
+*   **Compliance:** "Check this server configuration file for CIS Benchmark violations."
+
+---
+
 ## 🛠️ Installation & Setup
 
 ### Option 1: Kali Linux / Ubuntu (Recommended)
