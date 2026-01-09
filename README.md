@@ -136,7 +136,7 @@ ollama pull llava
 ```powershell
 cd pentest_backend
 pip install -r requirements.txt
-python main.py
+uvicorn main:app --reload
 ```
 *Note: If you get a "command not found" error for tools like Nmap, ensure you have installed the Windows versions of Nmap, Nikto, etc., and added them to your System PATH.*
 
