@@ -60,6 +60,14 @@ Directly controls Kali Linux arsenal:
 
 ---
 
+## 💻 System Requirements (Important)
+To avoid build failures (especially the `i686-pc-windows-msvc` error), ensure your environment meets these specs:
+* **OS:** Windows 10/11 (64-bit recommended), Linux, or macOS.
+* **Python:** 3.12 or 3.13 (64-bit). 
+* **Architecture:** **x64 (64-bit)** is required. 32-bit (i686) is currently not supported for Python 3.14+ due to Rust toolchain limitations.
+* **RAM:** 8GB minimum (16GB+ recommended for running local models).
+
+---
 ## 🎮 Tactical Usage & Prompt Engineering
 
 SherKhan is designed to adapt to various Cyber Security roles. Here is how to utilize its AI capabilities professionally:
